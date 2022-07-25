@@ -7,9 +7,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   background-color: rgb(12, 12, 12);
   top: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar h2 {
@@ -24,14 +27,39 @@
 .navbar .about > p {
   margin-left: 1.4rem;
   cursor: pointer;
+  align-items: center;
 }
 
 .navbar .about > button {
-  margin-left: 1.4rem;
-  padding: 0rem 0.7rem;
+  margin-right: 1.4rem;
+  padding: 0rem 0.9rem;
   font-size: 1.5rem;
   border-radius: 0.3rem;
   border: none;
   background-color: #20d4e0;
   cursor: pointer;
 }
+
+#signup-btn {
+  margin-left: 1.4rem;
+}
+
+.navbar .about > button:hover {
+  background-color: #ff7200;
+  color: white;
+}
+
+.show-details {
+  border: 1px solid red;
+}
+
+.wedding {
+  display: grid;
+  grid-gap: 0.9rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem;
+  margin-top: 5.5rem;
+}
+
+
+
