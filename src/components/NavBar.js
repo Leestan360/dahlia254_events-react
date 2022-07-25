@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/style.css";
 
 function NavBar() {
   return (
     <div className="navbar">
       <h2>Dahlia254_Events</h2>
-      <div>
+      <div className="about">
         <p>About</p>
         <p>Events</p>
         <p>Weddings</p>
