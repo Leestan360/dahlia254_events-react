@@ -1,4 +1,5 @@
 import React from "react";
+import EventsPage from "./EventsPage";
 import NavBar from "./NavBar";
 import WeddingsPage from "./WeddingsPage";
 
@@ -8,6 +9,7 @@ function App() {
   <div>
     <NavBar />
     <WeddingsPage />
+    <EventsPage />
   </div>
   );
 }

@@ -23,7 +23,7 @@ function WeddingsPage() {
   })
 
   return (
-    <div className="wedding">
+    <div className="wedding-event">
       {getWeddings}
     </div>
   );
