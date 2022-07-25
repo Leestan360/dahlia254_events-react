@@ -13,7 +13,7 @@ function EventsPage() {
     })
   }, [])
 
-  const getEvents = allEvents.map((oneEvent, index) => {
+  const displayEvents = allEvents.map((oneEvent, index) => {
     return <div key={index} className="show-details">
         <img src={oneEvent.image} alt="Events Images"/>
         <p>{oneEvent.date}</p>
@@ -24,7 +24,7 @@ function EventsPage() {
 
   return (
     <div className="wedding-event">
-      {getEvents}
+      {displayEvents}
     </div>
   );
 }
