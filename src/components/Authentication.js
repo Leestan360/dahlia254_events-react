@@ -36,6 +36,7 @@ function Authentication() {
       onAddUser(data)
       setFormData({...formData, firstName: "", lastName: "", email: "", password: "", confirmPassword: ""})
       console.log(data)
+      alert(`Welcome ${formData.firstName} ${formData.lastName}`)
     })
   }
 

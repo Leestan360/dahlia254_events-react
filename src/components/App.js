@@ -1,8 +1,10 @@
 import React from "react";
-import NavBar from "./NavBar";
-import EventsPage from "./EventsPage";
 import Authentication from "./Authentication";
-// import WeddingsPage from "./WeddingsPage";
+import NavBar from "./NavBar";
+// import EventsList from "./EventsPage";
+// import { Route, Routes } from "react-router-dom";
+// import WeddingsList from "./WeddingsPage";
+// import Login from "./Login";
 
 function App() {
 
@@ -10,8 +12,25 @@ function App() {
   return (
   <div>
     <NavBar />
-    <EventsPage />
-    <Authentication />
+      {/* <Routes> */}
+        {/* <Route exact path="/about">
+        </Route>
+        <Route exact path="/events">
+          <EventsList />
+        </Route>
+        <Route exact path="/weddings">
+          <WeddingsList />
+        </Route> */}
+        {/* <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/signup">
+          <Authentication />
+        </Route>
+        <Route exact path="/">
+        </Route>
+      </Routes> */}
+      <Authentication />
   </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/style.css"
 
-function WeddingsPage() {
+function WeddingsList() {
 
   const [weddings, setWeddings] = useState([]);
 
@@ -29,4 +29,4 @@ function WeddingsPage() {
   );
 }
 
-export default WeddingsPage;
+export default WeddingsList;

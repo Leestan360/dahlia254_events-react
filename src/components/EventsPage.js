@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/style.css"
 
-function EventsPage() {
+function EventsList() {
 
   const [allEvents, setAllEvents] = useState([]);
 
@@ -29,4 +29,4 @@ function EventsPage() {
   );
 }
 
-export default EventsPage;
+export default EventsList;

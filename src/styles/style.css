@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif, "Poppins";
 }
 
 /* NavBar styling */
@@ -8,7 +9,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem;
+  padding-top: 1.3rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.8rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   background-color: rgb(12, 12, 12);
@@ -21,38 +24,65 @@
   color: #ff7200;
 }
 
-.navbar .about {
-  display: flex;
-  color: white;
-}
-
-.navbar .about > p {
+.navbar .about > #nav-link {
   margin-left: 1.4rem;
   cursor: pointer;
   align-items: center;
+  text-decoration: none;
+  color:#fff;
+  margin-top: 0.5rem;
 }
 
-.navbar .about > button {
-  margin-right: 1.4rem;
-  padding: 0rem 0.9rem;
+.navbar .about > #nav-link.active {
+  color:#20d4e0;
+  font-size: 1.7rem;
+}
+
+.navbar .about > #nav-link:hover {
+  color: #20d4e0;
+}
+
+.navbar .active {
+  color: #20d4e0;
+}
+
+.navbar .about > #login-btn {
+  margin-left: 1.6rem;
+  padding: 0.3rem 0.9rem;
   font-size: 1.5rem;
   border-radius: 0.3rem;
   border: none;
-  background-color: #20d4e0;
   cursor: pointer;
+  text-decoration: none;
+  background-color: #ff7200;
+  color: rgb(12, 12, 12);
+}
+
+.navbar .about > #signup-btn {
+  margin-right: 1.4rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ff7200;
+  color: rgb(12, 12, 12);
 }
 
 #signup-btn {
-  margin-left: 1.4rem;
+  margin-left: 1.2rem;
 }
 
-.navbar .about > button:hover {
-  background-color: #ff7200;
+.navbar .about > #login-btn:hover, .navbar .about > #signup-btn:hover {
+  background-color: #20d4e0;
   color: white;
 }
 
-.show-details {
-  border: 1px solid red;
+.navbar .about > #login-btn.active, .navbar .about > #signup-btn.active {
+  background-color: #20d4e0;
+  color: rgb(12, 12, 12);
+  font-size: 1.7rem;
 }
 
 /* Wedding styling and events styling*/
@@ -64,11 +94,15 @@
   margin-top: 5.5rem;
 }
 
+.show-details {
+  border: 1px solid red;
+}
+
 /* Authentiction styling and login form */
 .signup-form, .login-form {
   margin: 8.4rem auto 0;
   width: 22rem;
-  height: 23rem;
+  height: 25rem;
   background-color: lightgray;
   border-radius: 0.5rem;
   text-align: center;
