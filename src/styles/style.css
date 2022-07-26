@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* NavBar styling */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,6 +55,7 @@
   border: 1px solid red;
 }
 
+/* Wedding styling and events styling*/
 .wedding-event {
   display: grid;
   grid-gap: 0.9rem;
@@ -61,5 +64,14 @@
   margin-top: 5.5rem;
 }
 
+/* Authentiction styling */
+.signup-form {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
+.signup-form input {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/style.css"
 
 
 function Authentication() {
@@ -20,6 +21,12 @@ function Authentication() {
     setUsers([...users, newUser])
   }
 
+  // function checkPassword() {
+  //   if (formData.password !== formData.confirmPassword) {
+  //     alert("Passwords do not match")
+  //   }
+  // }
+
   function handleSubmit(event) {
     event.preventDefault();
     fetch("https://dahlia254-react.herokuapp.com/users", {
@@ -32,19 +39,23 @@ function Authentication() {
     })
     .then(response => response.json())
     .then(data => {
+      if (formData.password !== formData.confirmPassword) {
+        alert("Passwords do not match")
+      } else {
       onAddUser(data)
       setFormData({...formData, firstName: "", lastName: "", email: "", password: "", confirmPassword: ""})
+      console.log(data)}
     })
   }
 
 
   return (
     <form onSubmit={handleSubmit} className="signup-form">
-      <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName"/>
-      <input onChange={handleChange} name="lastName" type="text" placeholder="LastName"/>
-      <input onChange={handleChange} name="email" type="email" placeholder="Email"/>
-      <input onChange={handleChange} name="password" type="password" placeholder="Password"/>
-      <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password"/>
+      <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName" required />
+      <input onChange={handleChange} name="lastName" type="text" placeholder="LastName" required />
+      <input onChange={handleChange} name="email" type="email" placeholder="Email" required />
+      <input onChange={handleChange} name="password" type="password" placeholder="Password" required />
+      <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password" required />
       <button type="submit">Signup</button>
     </form>
   );
