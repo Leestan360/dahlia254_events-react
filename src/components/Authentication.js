@@ -48,7 +48,7 @@ function Authentication() {
 
   return (
     <form onSubmit={handleSubmit} className="signup-form">
-      <h2>Create Account</h2>
+      <h2 id="h2">Create Account</h2>
       <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName" required id="firstname"/>
       <input onChange={handleChange} name="lastName" type="text" placeholder="LastName" required />
       <input onChange={handleChange} name="email" type="email" placeholder="Email" required />
