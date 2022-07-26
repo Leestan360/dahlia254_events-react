@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 
-function Authentication() {
+function Authentication({ onAddUser }) {
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -34,7 +34,14 @@ function Authentication() {
 
 
   return (
-    <div></div>
+    <form onSubmit={handleSubmit}>
+      <input onChange={handleChange} type="text" placeholder="FirstName"/>
+      <input onChange={handleChange} type="text" placeholder="LastName"/>
+      <input onChange={handleChange} type="email" placeholder="Email"/>
+      <input onChange={handleChange} type="password" placeholder="Password"/>
+      <input onChange={handleChange} type="password" placeholder="Confirm Password"/>
+      <button type="submit">Signup</button>
+    </form>
   );
 }
 

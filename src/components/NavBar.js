@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/style.css";
 
 
 function NavBar() {
+
+  const [users, setUsers] = useState([]);
+
+  function onAddUser(newUser) {
+    setUsers([...users, newUser])
+  }
+
   return (
     <div className="navbar">
       <h2>Dahlia254_Events</h2>
@@ -11,7 +18,7 @@ function NavBar() {
         <p>Events</p>
         <p>Weddings</p>
         <button id="signup-btn">Login</button>
-        <button>Signup</button>
+        <button onAddUser={onAddUser}>Signup</button>
       </div>
     </div>
   );

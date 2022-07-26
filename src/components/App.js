@@ -6,6 +6,7 @@ import WeddingsPage from "./WeddingsPage";
 
 function App() {
 
+
   return (
   <div>
     <NavBar />
