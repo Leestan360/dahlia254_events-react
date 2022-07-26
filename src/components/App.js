@@ -8,13 +8,14 @@ import EventsList from "./EventsList";
 import WeddingsList from "./WeddingsList";
 import Home from "./Home";
 import About from "./About";
+import "../styles/style.css"
 
 function App() {
 
 
   // routes to the components on the page
   return (
-  <div>
+  <div className="App">
     <NavBar />
     <Routes>
       <Route exact path="/about" element={<About />} />

@@ -4,6 +4,17 @@
   font-family: sans-serif, "Poppins";
 }
 
+/* App styling */
+.App{
+  width: 100%; 
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../../public/victoria-priessnitz-JFAPl7brL6U-unsplash.jpg);  
+  background-position: center;  
+  background-size: cover;  
+  height: 100vh;  
+  background-repeat: no-repeat;  
+  position: fixed; 
+}
+
 /* NavBar styling */
 
 .navbar {
@@ -12,9 +23,7 @@
   padding-top: 1.3rem;
   padding-bottom: 0.7rem;
   padding-left: 0.8rem;
-  margin-bottom: 1rem;
   font-size: 1.5rem;
-  background-color: rgb(12, 12, 12);
   top: 0;
   position: fixed;
   width: 100%;
@@ -22,6 +31,7 @@
 
 .navbar h2 {
   color: #ff7200;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar .about > #nav-link {
@@ -31,6 +41,7 @@
   text-decoration: none;
   color:#fff;
   margin-top: 0.5rem;
+  padding-top: 3rem;
 }
 
 .navbar .about > #nav-link.active {
@@ -97,6 +108,12 @@
 .show-details {
   border: 1px solid lightgray;
   height: 15rem;
+  background-color: #fff;
+}
+
+.show-details img {
+  height: 10rem;
+  width: 8rem;
 }
 
 /* Authentiction styling and login form */
