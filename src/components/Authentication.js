@@ -20,8 +20,8 @@ function Authentication() {
     setUsers([...users, newUser])
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(event) {
+    event.preventDefault();
     fetch("https://dahlia254-react.herokuapp.com/users", {
       method: "POST",
       headers: {
@@ -39,7 +39,7 @@ function Authentication() {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="signup-form">
       <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName"/>
       <input onChange={handleChange} name="lastName" type="text" placeholder="LastName"/>
       <input onChange={handleChange} name="email" type="email" placeholder="Email"/>

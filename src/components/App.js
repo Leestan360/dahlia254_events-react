@@ -1,8 +1,8 @@
 import React from "react";
 import Authentication from "./Authentication";
-import EventsPage from "./EventsPage";
+// import EventsPage from "./EventsPage";
 import NavBar from "./NavBar";
-import WeddingsPage from "./WeddingsPage";
+// import WeddingsPage from "./WeddingsPage";
 
 function App() {
 
@@ -10,8 +10,6 @@ function App() {
   return (
   <div>
     <NavBar />
-    <WeddingsPage />
-    <EventsPage />
     <Authentication />
   </div>
   );
