@@ -39,12 +39,9 @@ function Authentication() {
     })
     .then(response => response.json())
     .then(data => {
-      if (formData.password !== formData.confirmPassword) {
-        alert("Passwords do not match")
-      } else {
       onAddUser(data)
       setFormData({...formData, firstName: "", lastName: "", email: "", password: "", confirmPassword: ""})
-      console.log(data)}
+      console.log(data)
     })
   }
 
@@ -57,7 +54,7 @@ function Authentication() {
       <input onChange={handleChange} name="email" type="email" placeholder="Email" required />
       <input onChange={handleChange} name="password" type="password" placeholder="Password" required />
       <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password" required />
-      <button type="submit">Signup</button>
+      <button type="submit">SignUp</button>
       <p>Have an account?<button>Login</button></p>
     </form>
   );

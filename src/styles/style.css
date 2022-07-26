@@ -64,8 +64,8 @@
   margin-top: 5.5rem;
 }
 
-/* Authentiction styling */
-.signup-form {
+/* Authentiction styling and login form */
+.signup-form, .login-form {
   margin: 6rem auto 0;
   width: 22rem;
   height: 23rem;
@@ -74,12 +74,12 @@
   text-align: center;
 }
 
-.signup-form h2 {
+.signup-form h2, .login-form h2 {
   margin-top: 1rem;
   font-family: sans-serif;
 }
 
-.signup-form input {
+.signup-form input, .login-form input {
   width: 86%;
   height: 1.3rem;
   margin: 0.6rem auto 0 auto;
@@ -90,11 +90,7 @@
   font-size: 1.1rem;
 }
 
-/* #firstname {
-  margin-top: 3rem;
-} */
-
-.signup-form button[type="submit"] {
+.signup-form button[type="submit"], .login-form button[type="submit"] {
   width: 90%;
   height: 2.2rem;
   font-size: 1.5rem;
@@ -105,16 +101,16 @@
   margin: 1rem auto;
 }
 
-.signup-form button[type="submit"]:hover {
+.signup-form button[type="submit"]:hover, .login-form button[type="submit"]:hover {
   background-color: #ff7200;
   color: #fff;
 }
 
-.signup-form p {
+.signup-form p, .login-form p {
   font-size: 1.2rem;
 }
 
-.signup-form p button {
+.signup-form p button, .login-form p button {
   background-color: #20d4e0;
   border: none;
   outline: none;
@@ -126,7 +122,7 @@
   cursor: pointer;
 }
 
-.signup-form p button:hover {
+.signup-form p button:hover, .login-form p button:hover {
   background-color: #ff7200;
   color: #fff;
 }
