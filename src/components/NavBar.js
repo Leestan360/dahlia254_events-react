@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <div className="navbar">
-      <h2>Dahlia254_Events</h2>
+      <h2>Dahlia254</h2>
       <div className="about">
         <NavLink
           id="nav-link"
