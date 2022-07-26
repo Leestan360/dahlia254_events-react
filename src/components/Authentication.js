@@ -58,7 +58,7 @@ function Authentication() {
       <input onChange={handleChange} name="password" type="password" placeholder="Password" required />
       <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password" required />
       <button type="submit">Signup</button>
-      <p>Already have an account?<button>Login</button></p>
+      <p>Have an account?<button>Login</button></p>
     </form>
   );
 }

@@ -110,3 +110,23 @@
   color: #fff;
 }
 
+.signup-form p {
+  font-size: 1.2rem;
+}
+
+.signup-form p button {
+  background-color: #20d4e0;
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+  width: 4.3rem;
+  cursor: pointer;
+}
+
+.signup-form p button:hover {
+  background-color: #ff7200;
+  color: #fff;
+}
