@@ -68,14 +68,19 @@
 .signup-form {
   margin: 6rem auto 0;
   width: 22rem;
-  height: 24rem;
-  background-color: #20d4e0;
+  height: 23rem;
+  background-color: lightgray;
   border-radius: 0.5rem;
   text-align: center;
 }
 
+.signup-form h2 {
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+
 .signup-form input {
-  width: 88%;
+  width: 86%;
   height: 1.3rem;
   margin: 0.6rem auto 0 auto;
   padding: 0.4rem;
@@ -88,3 +93,20 @@
 /* #firstname {
   margin-top: 3rem;
 } */
+
+.signup-form button[type="submit"] {
+  width: 90%;
+  height: 2.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #20d4e0;
+  margin: 1rem auto;
+}
+
+.signup-form button[type="submit"]:hover {
+  background-color: #ff7200;
+  color: #fff;
+}
+
