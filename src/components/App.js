@@ -1,3 +1,4 @@
+// import all required components
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Authentication from "./Authentication";
@@ -9,6 +10,7 @@ import WeddingsList from "./WeddingsList";
 function App() {
 
 
+  // routes to the components on the page
   return (
   <div>
     <NavBar />

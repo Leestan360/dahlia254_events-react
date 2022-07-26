@@ -4,7 +4,10 @@ import "../styles/style.css"
 
 function Authentication() {
 
+  // for users
   const [users, setUsers] = useState([])
+
+  // for value inputs in the form
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -13,14 +16,17 @@ function Authentication() {
     confirmPassword: ""
   })
 
+  // capture changes that happen to the inputs
   function handleChange(e) {
     setFormData({...formData, [e.target.name]: e.target.value})
   }
 
+  // add new user to the database
   function onAddUser(newUser) {
     setUsers([...users, newUser])
   }
 
+  // submit the form successfully to the database
   function handleSubmit(event) {
     event.preventDefault();
     fetch("https://dahlia254-react.herokuapp.com/users", {
@@ -41,6 +47,7 @@ function Authentication() {
   }
 
 
+  // signup form
   return (
     <form onSubmit={handleSubmit} className="signup-form">
       <h2 id="h2">Create Account</h2>

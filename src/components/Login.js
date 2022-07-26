@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/style.css"
 
 function Login() {
+
+  // login form
   return (
     <form type="submit" className="login-form">
       <h2 id="h2">Login</h2>

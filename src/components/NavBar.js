@@ -7,6 +7,8 @@ import "../styles/style.css";
 
 function NavBar() {
 
+
+  // client-side links to display on the url
   return (
     <div className="navbar">
       <h2>Dahlia254</h2>

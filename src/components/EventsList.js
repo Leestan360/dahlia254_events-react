@@ -3,8 +3,10 @@ import "../styles/style.css"
 
 function EventsList() {
 
+  // set initial events before fetch
   const [allEvents, setAllEvents] = useState([]);
 
+  // fetch events to display when the page loads
   useEffect(() => {
     fetch("https://dahlia254-react.herokuapp.com/events")
     .then(res => res.json())
@@ -13,6 +15,7 @@ function EventsList() {
     })
   }, [])
 
+  // map through the events to display each event
   const displayEvents = allEvents.map((oneEvent, index) => {
     return <div key={index} className="show-details">
         <img src={oneEvent.image} alt="Events Images"/>
@@ -22,6 +25,7 @@ function EventsList() {
     </div>
   })
 
+  // display the events
   return (
     <div className="wedding-event">
       {displayEvents}
