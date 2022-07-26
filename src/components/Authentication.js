@@ -51,12 +51,14 @@ function Authentication() {
 
   return (
     <form onSubmit={handleSubmit} className="signup-form">
-      <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName" required />
+      <h2>Create Account</h2>
+      <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName" required id="firstname"/>
       <input onChange={handleChange} name="lastName" type="text" placeholder="LastName" required />
       <input onChange={handleChange} name="email" type="email" placeholder="Email" required />
       <input onChange={handleChange} name="password" type="password" placeholder="Password" required />
       <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password" required />
       <button type="submit">Signup</button>
+      <p>Already have an account?<button>Login</button></p>
     </form>
   );
 }
