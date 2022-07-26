@@ -21,12 +21,6 @@ function Authentication() {
     setUsers([...users, newUser])
   }
 
-  // function checkPassword() {
-  //   if (formData.password !== formData.confirmPassword) {
-  //     alert("Passwords do not match")
-  //   }
-  // }
-
   function handleSubmit(event) {
     event.preventDefault();
     fetch("https://dahlia254-react.herokuapp.com/users", {
@@ -49,11 +43,11 @@ function Authentication() {
   return (
     <form onSubmit={handleSubmit} className="signup-form">
       <h2 id="h2">Create Account</h2>
-      <input onChange={handleChange} name="firstName" type="text" placeholder="FirstName" required id="firstname"/>
-      <input onChange={handleChange} name="lastName" type="text" placeholder="LastName" required />
-      <input onChange={handleChange} name="email" type="email" placeholder="Email" required />
-      <input onChange={handleChange} name="password" type="password" placeholder="Password" required />
-      <input onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirm Password" required />
+      <input onChange={handleChange} name="firstName" type="text" value={formData.firstName} placeholder="FirstName" required id="firstname"/>
+      <input onChange={handleChange} name="lastName" type="text" value={formData.lastName} placeholder="LastName" required />
+      <input onChange={handleChange} name="email" type="email" value={formData.email} placeholder="Email" required />
+      <input onChange={handleChange} name="password" type="password" value={formData.password} placeholder="Password" required />
+      <input onChange={handleChange} name="confirmPassword" type="password" value={formData.confirmPassword} placeholder="Confirm Password" required />
       <button type="submit">SignUp</button>
       <p>Have an account?<button>Login</button></p>
     </form>

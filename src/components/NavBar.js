@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/style.css";
+// import Authentication from "./Authentication";
+// import Login from "./Login";
 
 
 function NavBar() {
-
 
   return (
     <div className="navbar">
@@ -12,7 +13,7 @@ function NavBar() {
         <p>About</p>
         <p>Events</p>
         <p>Weddings</p>
-        <button id="signup-btn">Login</button>
+        <button  id="signup-btn">Login</button>
         <button>Signup</button>
       </div>
     </div>
