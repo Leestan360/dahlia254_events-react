@@ -29,11 +29,13 @@
   width: 100%;
 }
 
+/* Navbar header level 2 */
 .navbar h2 {
   color: #ff7200;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar navigation links */
 .navbar .about > #nav-link {
   margin-left: 1.4rem;
   cursor: pointer;
@@ -44,19 +46,23 @@
   padding-top: 3rem;
 }
 
+/* Navbar navigation links active selection */
 .navbar .about > #nav-link.active {
   color:#20d4e0;
   font-size: 1.7rem;
 }
 
+/* Navbar navigation links hover */
 .navbar .about > #nav-link:hover {
   color: #20d4e0;
 }
 
+/* Navbar active links color */
 .navbar .active {
   color: #20d4e0;
 }
 
+/* Navbar navigation login button */
 .navbar .about > #login-btn {
   margin-left: 1.6rem;
   padding: 0.3rem 0.9rem;
@@ -69,6 +75,7 @@
   color: rgb(12, 12, 12);
 }
 
+/* Navbar navigation signup button */
 .navbar .about > #signup-btn {
   margin-right: 1.6rem;
   padding: 0.3rem 0.9rem;
@@ -85,11 +92,13 @@
   margin-left: 1.2rem;
 }
 
+/* Navbar navigation login and signup buttons hover */
 .navbar .about > #login-btn:hover, .navbar .about > #signup-btn:hover {
   background-color: #20d4e0;
   color: white;
 }
 
+/* Navbar navigation login and signup buttons active */
 .navbar .about > #login-btn.active, .navbar .about > #signup-btn.active {
   background-color: #20d4e0;
   color: rgb(12, 12, 12);
@@ -105,6 +114,7 @@
   margin-top: 6rem;
 }
 
+/* Divs for holdin fetched items */
 .show-details {
   border: 1px solid lightgray;
   height: 15rem;
@@ -116,7 +126,7 @@
   width: 8rem;
 }
 
-/* Authentiction styling and login form */
+/* Sign up form */
 .signup-form {
   margin: 8.4rem auto 0;
   width: 22rem;
@@ -126,10 +136,12 @@
   text-align: center;
 }
 
+/* Login and signup divs */
 .login, .signup {
   text-align: center;
 }
 
+/* Login forms */
 .login-form {
   margin: 8.4rem auto 0;
   width: 22rem;
@@ -139,6 +151,44 @@
   text-align: center;
 }
 
+/* Signup and login forms headers */
+.signup-form #h2, .login-form #h2 {
+  padding-top: 1rem;
+  font-family: sans-serif;
+  font-size: 2.2rem;
+}
+
+/* Signup and login forms inputs */
+.signup-form input, .login-form input {
+  width: 86%;
+  height: 1.3rem;
+  margin: 0.6rem auto 0 auto;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+/* Signup and login forms submit buttons */
+.signup-form button[type="submit"], .login-form button[type="submit"] {
+  width: 90%;
+  height: 2.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #20d4e0;
+  margin: 1rem auto;
+}
+
+/* Signup and login forms submit buttons hover */
+.signup-form button[type="submit"]:hover, .login-form button[type="submit"]:hover {
+  background-color: #ff7200;
+  color: #fff;
+}
+
+/* Login and signup divs paragraphs */
 .login p, .signup p {
   margin: 1rem auto 0;
   border: 1px solid lightgray;
@@ -150,6 +200,7 @@
   font-size: 1.3rem;
 }
 
+/* Login and signup divs paragraph buttons */
 .login p button, .signup p button {
   background-color: #20d4e0;
   border: none;
@@ -162,65 +213,8 @@
   cursor: pointer;
 }
 
+/* Login and signup divs paragraph buttons hover */
 .login p button:hover, .signup p button:hover {
   background-color: #ff7200;
   color: #fff;
-}
-
-.signup-form #h2, .login-form #h2 {
-  padding-top: 1rem;
-  font-family: sans-serif;
-  font-size: 2.2rem;
-}
-
-.signup-form input, .login-form input {
-  width: 86%;
-  height: 1.3rem;
-  margin: 0.6rem auto 0 auto;
-  padding: 0.4rem;
-  border: none;
-  border-radius: 0.3rem;
-  outline: none;
-  font-size: 1.1rem;
-}
-
-.signup-form button[type="submit"], .login-form button[type="submit"] {
-  width: 90%;
-  height: 2.2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 0.3rem;
-  border: none;
-  background-color: #20d4e0;
-  margin: 1rem auto;
-}
-
-.signup-form button[type="submit"]:hover, .login-form button[type="submit"]:hover {
-  background-color: #ff7200;
-  color: #fff;
-}
-
-.signup-form p {
-  font-size: 1.2rem;
-}
-
-.signup-form p button {
-  background-color: #20d4e0;
-  border: none;
-  outline: none;
-  padding: 0.2rem;
-  font-size: 1.3rem;
-  margin: 0.3rem;
-  border-radius: 0.3rem;
-  width: 4.3rem;
-  cursor: pointer;
-}
-
-.signup-form p button:hover, .login-form p button:hover {
-  background-color: #ff7200;
-  color: #fff;
-}
-
-.login-form p #account-btn {
-  width: 5.2rem;
 }
