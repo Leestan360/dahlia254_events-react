@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/style.css";
 
 function Login() {
@@ -7,7 +8,12 @@ function Login() {
     <div className="login">
       <form type="submit" className="login-form">
         <h2 id="h2">Log in to account</h2>
-        <input type="email" name="email" placeholder="Email" required />
+        <input 
+          type="email"
+          name="email" 
+          placeholder="Email" 
+          required 
+        />
         <input
           type="password"
           name="password"
@@ -17,7 +23,12 @@ function Login() {
         <button type="submit">Log in</button>
       </form>
       <p>
-        Don't have an account?<button id="account-btn">Sign Up</button>
+        Don't have an account?
+        <Link
+          to="/signup" 
+        >
+          Sign Up
+        </Link>
       </p>
     </div>
   );

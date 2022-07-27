@@ -41,13 +41,13 @@ function NavBar() {
         id="login-btn"
           to="/login"
         >
-          Login
+          Log in
         </NavLink>
         <NavLink
         id="signup-btn"
           to="/signup" 
         >
-          Signup
+          Sign Up
         </NavLink>
       </div>
     </div>

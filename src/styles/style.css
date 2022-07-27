@@ -201,20 +201,22 @@
 }
 
 /* Login and signup divs paragraph buttons */
-.login p button, .signup p button {
+.login p a, .signup p a {
   background-color: #20d4e0;
   border: none;
   outline: none;
-  padding: 0.2rem;
+  padding: 0.3rem;
   font-size: 1.3rem;
   margin: 0.3rem;
   border-radius: 0.3rem;
-  width: 6rem;
+  width: 6.4rem;
   cursor: pointer;
+  text-decoration: none;
+  color:rgb(12, 12, 12);
 }
 
 /* Login and signup divs paragraph buttons hover */
-.login p button:hover, .signup p button:hover {
+.login p a:hover, .signup p a:hover {
   background-color: #ff7200;
   color: #fff;
 }
