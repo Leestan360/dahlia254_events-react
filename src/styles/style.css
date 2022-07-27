@@ -120,19 +120,51 @@
 .signup-form {
   margin: 8.4rem auto 0;
   width: 22rem;
-  height: 25rem;
+  height: 21rem;
   background-color: lightgray;
   border-radius: 0.5rem;
+  text-align: center;
+}
+
+.login, .signup {
   text-align: center;
 }
 
 .login-form {
   margin: 8.4rem auto 0;
   width: 22rem;
-  height: 18rem;
+  height: 14rem;
   background-color: lightgray;
   border-radius: 0.5rem;
   text-align: center;
+}
+
+.login p, .signup p {
+  margin: 1rem auto 0;
+  border: 1px solid lightgray;
+  width: 22rem;
+  height: 3rem;
+  padding-top: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: lightgray;
+  font-size: 1.3rem;
+}
+
+.login p button, .signup p button {
+  background-color: #20d4e0;
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+.login p button:hover, .signup p button:hover {
+  background-color: #ff7200;
+  color: #fff;
 }
 
 .signup-form #h2, .login-form #h2 {
@@ -168,11 +200,11 @@
   color: #fff;
 }
 
-.signup-form p, .login-form p {
+.signup-form p {
   font-size: 1.2rem;
 }
 
-.signup-form p button, .login-form p button {
+.signup-form p button {
   background-color: #20d4e0;
   border: none;
   outline: none;

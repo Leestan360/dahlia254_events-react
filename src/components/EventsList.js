@@ -15,6 +15,7 @@ function EventsList() {
     })
   }, [])
 
+
   // map through the events to display each event
   const displayEvents = allEvents.map((oneEvent, index) => {
     return <div key={index} className="show-details">
