@@ -1,30 +1,25 @@
 import React, { useEffect, useState } from "react";
 import "../styles/style.css"
+import SingleEvent from "./SingleEvent";
 
 function EventsList() {
 
   // set initial events before fetch
-  const [allEvents, setAllEvents] = useState([]);
+  const [events, setEvents] = useState([]);
 
   // fetch events to display when the page loads
   useEffect(() => {
     fetch("https://dahlia254-react.herokuapp.com/events")
     .then(res => res.json())
     .then(data => {
-      setAllEvents(data)
+      setEvents(data)
     })
   }, [])
 
 
   // map through the events to display each event
-  const displayEvents = allEvents.map((oneEvent, index) => {
-    return <div key={index} className="show-details">
-        <img src={oneEvent.image} alt="Events Images"/>
-        <p>{oneEvent.date}</p>
-        <p>{oneEvent.time}</p>
-        <p>{oneEvent.description}</p>
-    </div>
-  })
+  const displayEvents = events.map((event, index) => {
+    return <SingleEvent key={index} event={event}/>})
 
   // display the events
   return (

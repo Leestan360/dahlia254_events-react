@@ -4,19 +4,16 @@
   font-family: sans-serif, "Poppins";
 }
 
-/* App styling */
-.App{
-  width: 100%; 
-  background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../../public/victoria-priessnitz-JFAPl7brL6U-unsplash.jpg);  
-  background-position: center;  
-  background-size: cover;  
-  height: 100vh;  
-  background-repeat: no-repeat;  
-  position: fixed; 
+/* html styling */
+html { 
+  background: url(../../public/victoria-priessnitz-JFAPl7brL6U-unsplash.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* NavBar styling */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +24,11 @@
   top: 0;
   position: fixed;
   width: 100%;
+  background: url(../../public/oie_yYNFYnaRDauM.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Navbar header level 2 */
@@ -111,20 +113,21 @@
   grid-gap: 0.9rem;
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem;
-  margin-top: 6rem;
+  margin-top: 7rem;
+  text-align: center;
 }
 
 /* Divs for holdin fetched items */
 .show-details {
   border: 1px solid lightgray;
-  height: 15rem;
-  background-color: #fff;
+  height: 20rem;
+  background-color: lightgray;
 }
 
-.show-details img {
+/* .show-details img {
   height: 10rem;
   width: 8rem;
-}
+} */
 
 /* Sign up form */
 .signup-form {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/style.css"
+import SingleWedding from "./SingleWedding";
 
 function WeddingsList() {
 
@@ -17,15 +18,9 @@ function WeddingsList() {
 
   // map through the weddings fetched to display each wedding
   const getWeddings = weddings.map((wedding, index) => {
-    return <div key={index} className="show-details">
-        <img src={wedding.image} alt="Wedding Images"/>
-        <p>{wedding.date}</p>
-        <p>{wedding.time}</p>
-        <p>{wedding.description}</p>
-    </div>
-  })
+    return <SingleWedding key={index} wedding={wedding}/>})
 
-  // display the each wedding
+  // display each wedding
   return (
     <div className="wedding-event">
       {getWeddings}
