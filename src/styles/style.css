@@ -124,10 +124,16 @@ html {
   background-color: lightgray;
 }
 
-/* .show-details img {
-  height: 10rem;
-  width: 8rem;
-} */
+.show-details img {
+  height: 13rem;
+  width: 10rem;
+}
+
+.show-details button {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  background-color: #20d4e0;
+}
 
 /* Sign up form */
 .signup-form {
@@ -222,4 +228,9 @@ html {
 .login p a:hover, .signup p a:hover {
   background-color: #ff7200;
   color: #fff;
+}
+
+/* Home page styling */
+#home-page {
+  display: grid;
 }

@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Dahlia254 Events
+## This is a project about an event and wedding site.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Home Page
+![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-38.png?raw=true "Title")
 
-## Available Scripts
+### Login Page
+![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-44.png?raw=true "Title")
 
-In the project directory, you can run:
 
-### `npm start`
+### Signup Page
+![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-56.png?raw=true "Title")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contributors
+This project is owned by Stanley Mayore, a Software Engineer and a student at Moringa School.
+### Contact Info
+You can contact me through if you have any issues or contacts:-
+   #### Email:- stanleymayore2@gmail.com
+   #### Phone No.:- +254702425434
+   #### [Linkedin]("www.linkedin.com/in/stanley-mayore")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
+This is a one page project. It has the home page, login page and signup page. 
+It is an HTML, CSS and JavaScript project that communicates with a public API to store users.
+It is user friendly and it is easy to navigate arround while on it. It works well with all the pages functioning.
+It's purpose is to develop a site that can help people conduct weddings and events at their preferred time.
+The site displays how the events are planned and organized and when to be conducted. This allows clients to choose
+places of liking to conduct their weddings and events with our help.
 
-### `npm test`
+## Known bugs
+The site tends to misbehave somehow but that will be worked on
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+#### React
+For developing the app on a single page
+#### JavaScript
+For functionality of the page
+#### HTML 
+For the page structures
+#### CSS
+For styling the pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Heroku
+For hosting the database
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License 
+This project is a MIT licensed project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `npm run eject`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### (C) Stanley Mayore, 2022

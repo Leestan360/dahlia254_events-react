@@ -15,7 +15,7 @@ function SingleEvent({ event }) {
       <h3>{event.date}</h3>
       <h3>{event.time}</h3>
       <p>{event.description}</p>
-      <button onClick={toggleIsBooked}>{!isBooked ? "Book Event" : "Cancel Event"}</button>
+      <button onClick={toggleIsBooked}>{!isBooked ? "Book" : "Cancel"}</button>
     </div>
   );
 }

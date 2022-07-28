@@ -43,17 +43,23 @@ function Authentication() {
     })
       .then((response) => response.json())
       .then((data) => {
-        onAddUser(data);
-        setFormData({
-          ...formData,
-          firstName: "",
-          lastName: "",
-          email: "",
-          password: "",
-          confirmPassword: "",
-        });
-        console.log(data);
-        alert(`Welcome ${formData.firstName} ${formData.lastName}`);
+        if (formData.password !== formData.confirmPassword) {
+          alert("Passwords do not match!")
+        } else if (formData.password.length < 6) {
+          alert("Password must be a minimum of 6 characters")
+        } else {
+          onAddUser(data);
+          alert(`Welcome ${formData.firstName} ${formData.lastName}`)
+          setFormData({
+            ...formData,
+            firstName: "",
+            lastName: "",
+            email: "",
+            password: "",
+            confirmPassword: "",
+          });
+          console.log(data);
+        };
       });
   }
 
@@ -69,7 +75,6 @@ function Authentication() {
           value={formData.firstName}
           placeholder="FirstName"
           required
-          id="firstname"
         />
         <input
           onChange={handleChange}
@@ -87,6 +92,7 @@ function Authentication() {
           placeholder="Email"
           required
         />
+        
         <input
           onChange={handleChange}
           name="password"
