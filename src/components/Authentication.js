@@ -1,10 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/style.css";
 
 function Authentication() {
 
+  const navigate = useNavigate();
 
   // for value inputs in the form
   const [formData, setFormData] = useState({
@@ -31,19 +32,20 @@ function Authentication() {
         confirmPassword: formData.confirmPassword
     };
 
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match!")
+    } else if (signupFormData.password.length < 6) {
+      alert("Password must be a minimum of 6 characters")
+    } else {
     axios.post("https://dahlia254-react.herokuapp.com/signup", signupFormData)
     .then(res => {
-      if (formData.password !== formData.confirmPassword) {
-        alert("Passwords do not match!")
-      } else if (signupFormData.password.length < 6) {
-        alert("Password must be a minimum of 6 characters")
-      } else {
         console.log(res)
+        navigate("/login")
         alert(`Welcome ${signupFormData.firstName} ${signupFormData.lastName}`)
-      }
     })
     .catch(err => console.log(err))
   }
+}
 
   // signup form
   return (

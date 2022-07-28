@@ -8,9 +8,8 @@ function Login() {
 
   const [userData, setUserData] = useState([]);
 
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [loggedInUser, setLoggedInUser] = useState([]);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     fetch("https://dahlia254-react.herokuapp.com/signup")
@@ -32,15 +31,12 @@ function Login() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const userLogin = userData.filter((user, index) => {
+    userData.filter(user => {
       if (user.email === email && user.password === password) {
-        alert(`Welcome `)
+        alert(`Welcome ${user.firstName} ${user.lastName}`)
         navigate("/")
-      } else {
-        alert("Invalid email or password!")
-      }
-
-      setLoggedInUser(userLogin)
+      } 
+      return user;
     })
   }
 
