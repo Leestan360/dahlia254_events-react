@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState } from "react";
 import event from "./event (1).png"
 import event4 from './event4.png'
@@ -14,7 +13,7 @@ import wedding4 from "./wedding4.png"
 import wedding5 from "./wedding5.png"
 
 function Home() {
-  const [formData, setFormData] = useState({email: "", default: ""})
+  const [formData, setFormData] = useState({fullName: "", details: ""})
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,13 +23,21 @@ function Home() {
     e.preventDefault();
 
     const detailsFormData = {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
+        fullName: formData.fullName,
+        details: formData.details,
     };
 
-    axios.post("https://dahlia254-react.herokuapp.com/requests", detailsFormData)
+    fetch("https://dahlia254-react.herokuapp.com/requests", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({detailsFormData})
+    })
     .then(res => console.log(res))
-    .catch(err => console.log(err))
+    .then(data => {
+      setFormData({...formData, fullName: "", details: ""})
+    })
   }
 
   return (

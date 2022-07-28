@@ -125,14 +125,15 @@ html {
 }
 
 .show-details img {
-  height: 13rem;
-  width: 10rem;
+  height: 13.3rem;
+  width: 25.2rem;
 }
 
 .show-details button {
   font-size: 1.2rem;
   padding: 0.2rem;
   background-color: #20d4e0;
+  cursor: pointer;
 }
 
 /* Sign up form */

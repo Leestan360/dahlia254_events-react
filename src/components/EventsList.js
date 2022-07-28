@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/style.css"
 import SingleEvent from "./SingleEvent";
 
+
 function EventsList() {
 
   // set initial events before fetch
