@@ -2,14 +2,14 @@
 ## This is a project about an event and wedding site.
 
 ### Home Page
-![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-38.png?raw=true "Title")
+Has a request form for events and weddings planning
 
 ### Login Page
-![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-44.png?raw=true "Title")
+Logs in a user and redirects to home page
 
 
 ### Signup Page
-![Alt homepage](./assets/images/Screenshot%20from%202022-06-25%2014-26-56.png?raw=true "Title")
+Signs up a user and redirects to login page for logging in to site
 
 ## Contributors
 This project is owned by Stanley Mayore, a Software Engineer and a student at Moringa School.
@@ -21,14 +21,14 @@ You can contact me through if you have any issues or contacts:-
 
 ## Description
 This is a one page project. It has the home page, login page and signup page. 
-It is an HTML, CSS and JavaScript project that communicates with a public API to store users.
+It is an HTML, CSS, JavaScript and React JS project that communicates with a public API to store users, events and weddings.
 It is user friendly and it is easy to navigate arround while on it. It works well with all the pages functioning.
 It's purpose is to develop a site that can help people conduct weddings and events at their preferred time.
 The site displays how the events are planned and organized and when to be conducted. This allows clients to choose
 places of liking to conduct their weddings and events with our help.
 
 ## Known bugs
-The site tends to misbehave somehow but that will be worked on
+The site tends to misbehave on fetching images somehow but that will be worked on
 
 ## Technologies Used
 

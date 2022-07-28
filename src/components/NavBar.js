@@ -11,7 +11,7 @@ function NavBar() {
   // client-side links to display on the url
   return (
     <div className="navbar">
-      <h2>Dahlia254</h2>
+      <h2><NavLink id="dahlia" to="/">Dahlia254</NavLink></h2>
       <div className="about">
         <NavLink
           id="nav-link"
