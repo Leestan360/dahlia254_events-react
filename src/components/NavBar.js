@@ -21,12 +21,6 @@ function NavBar() {
         </NavLink>
         <NavLink
         id="nav-link"
-          to="/about"
-        >
-          About
-        </NavLink>
-        <NavLink
-        id="nav-link"
           to="/events"
         >
           Events

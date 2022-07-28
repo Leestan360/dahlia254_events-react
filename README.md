@@ -1,4 +1,4 @@
-# Dahlia254 Events
+# Dahlia254
 ## This is a project about an event and wedding site.
 
 ### Home Page

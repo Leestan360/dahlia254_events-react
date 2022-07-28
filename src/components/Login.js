@@ -35,6 +35,7 @@ function Login() {
       if (user.email === email && user.password === password) {
         alert(`Welcome ${user.firstName} ${user.lastName}`)
         navigate("/")
+        
       } 
       return user;
     })

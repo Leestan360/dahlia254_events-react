@@ -7,7 +7,6 @@ import Login from "./Login";
 import EventsList from "./EventsList";
 import WeddingsList from "./WeddingsList";
 import Home from "./Home";
-import About from "./About";
 import "../styles/style.css"
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
   <div className="App">
     <NavBar />
     <Routes>
-      <Route exact path="/about" element={<About />} />
       <Route exact path="/events" element={<EventsList />} />  
       <Route exact path="/weddings" element={<WeddingsList />} /> 
       <Route exact path="/login" element={<Login />} />

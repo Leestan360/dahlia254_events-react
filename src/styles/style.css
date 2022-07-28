@@ -117,7 +117,7 @@ html {
   text-align: center;
 }
 
-/* Divs for holdin fetched items */
+/* Divs for holding fetched items */
 .show-details {
   border: 1px solid lightgray;
   height: 20rem;
@@ -231,6 +231,11 @@ html {
 }
 
 /* Home page styling */
+.home-page {
+  display: flex;
+  justify-content: space-between;
+}
+
 .home-page #request {
   margin-top: 7rem;
   margin-left: 2rem;
@@ -238,6 +243,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 22rem;
+  height: 28rem;
   border: 1px solid lightgray;
   border-radius: 0.3em;
   background-color: lightgray;
@@ -259,4 +265,20 @@ html {
   font-size: 1.5rem;
   background-color: #ff7200;
   border: none;
+  cursor: pointer;
+}
+
+.home-images {
+  margin-top: 7rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-gap: 0.9rem;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 1px solid lightgray;
+  background-color: lightgray;
+  padding: 0.5em;
+}
+
+.home-images img {
+  width: 18rem;
 }
