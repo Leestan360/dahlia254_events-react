@@ -231,6 +231,32 @@ html {
 }
 
 /* Home page styling */
-#home-page {
-  display: grid;
+.home-page #request {
+  margin-top: 7rem;
+  margin-left: 2rem;
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  border: 1px solid lightgray;
+  border-radius: 0.3em;
+  background-color: lightgray;
+}
+
+#request > input[type="text"],
+#request  > textarea {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+#request > input[type="text"] {
+  height: 2rem;
+}
+
+#request > input[type="submit"] {
+  height: 2rem;
+  font-size: 1.5rem;
+  background-color: #ff7200;
+  border: none;
 }
